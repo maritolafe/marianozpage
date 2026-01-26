@@ -1,0 +1,83 @@
+{
+  "carreras": [
+    {
+      "id": 1,
+      "nombre": "ingenieria mecatronica",
+      "establecimiento": "universidad nacional de lomas de zamora",
+      "estado": "en proceso",
+      "clase": "dato1"
+    },
+    {
+      "id": 2,
+      "nombre": "tramo pedadogico docente",
+      "establecimiento": "universidad nacional de lomas de zamora",
+      "estado": "terminado",
+      "clase": "dato2"
+    },
+    {
+      "id": 3,
+      "nombre": "tecnico automotor",
+      "establecimiento": "E.E.T N°2 \"Maria Eva DUARTE\"",
+      "estado": "terminado",
+      "clase": "dato2"
+    }
+  ],
+  "cursos": [
+    {
+      "id": 1,
+      "nombre": "javascript develooper",
+      "establecimiento": "codo a codo",
+      "estado": "en proceso",
+      "clase": "dato3"
+    },
+    {
+      "id": 2,
+      "nombre": "solidword basico",
+      "establecimiento": "utn-ba",
+      "estado": "en proceso",
+      "clase": "dato3"
+    },
+    {
+      "id": 3,
+      "nombre": "java develooper",
+      "establecimiento": "codo a codo",
+      "estado": "terminado",
+      "clase": "dato4"
+    },
+    {
+      "id": 4,
+      "nombre": "diplomatura web-diveloper",
+      "establecimiento": "universidad tecnogica nacional- resitencia",
+      "estado": "terminado",
+      "clase": "dato4"
+    },
+    {
+      "id": 5,
+      "nombre": "programacion javascript",
+      "establecimiento": "universidad nacional de lomas de zamora",
+      "estado": "terminado",
+      "clase": "dato4"
+    },
+    {
+      "id": 6,
+      "nombre": "programacion IA-GOBERNANZA DE DATOS",
+      "establecimiento": "plataforma de wed educativa- ialab",
+      "estado": "terminado",
+      "clase": "dato4"
+    },
+    {
+      "id": 7,
+      "nombre": "programacion cobol",
+      "establecimiento": "plataforma de wed educativa- itoo",
+      "estado": "terminado",
+      "clase": "dato4"
+    },
+    {
+      "id": 8,
+      "nombre": "Dibujante proyectista-autocad.",
+      "establecimiento": "universidad nacional de lomas de zamora",
+      "estado": "terminado",
+      "clase": "dato4"
+    }
+  ]
+} 

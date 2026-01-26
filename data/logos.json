@@ -1,0 +1,177 @@
+{
+  "logos": [
+    {
+      "id": "c",
+      "nombre": "C",
+      "imagen": "foto/c.png",
+      "alt": "foto logo de c",
+      "title": "programacion",
+      "descripcion": {
+        "titulo": "programacion lenguaje c",
+        "texto": "primer lenguaje en aprender",
+        "progreso": 50,
+        "mostrarProgreso": true
+      }
+    },
+    {
+      "id": "javascript",
+      "nombre": "JavaScript",
+      "imagen": "foto/javascript.png",
+      "alt": "foto logo de javascript",
+      "title": "programacion frontend",
+      "descripcion": {
+        "titulo": "javascript",
+        "texto": "javascript es el lenguaje que mayor uso. En el uso de la pagina web",
+        "progreso": 75,
+        "mostrarProgreso": true
+      }
+    },
+    {
+      "id": "html",
+      "nombre": "HTML",
+      "imagen": "foto/html.png",
+      "alt": "foto logo de html5",
+      "title": "estructura de pagina",
+      "descripcion": {
+        "titulo": "Html",
+        "texto": "Manejo de hipertexto de web, lo utilizo hace 4 años empecé en 2020",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "css",
+      "nombre": "CSS",
+      "imagen": "foto/css.png",
+      "alt": "foto logo de css",
+      "title": "hojas de estilo",
+      "descripcion": {
+        "titulo": "css",
+        "texto": "aprendizaje junto a html al mismo tiempo",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "php",
+      "nombre": "PHP",
+      "imagen": "foto/php2.png",
+      "alt": "foto logo de php",
+      "title": "programacion backend",
+      "descripcion": {
+        "titulo": "php",
+        "texto": "Backend único programa utilizado por ahora del lado del servidor. en el futuro usaré java.",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "cobol",
+      "nombre": "COBOL",
+      "imagen": "foto/cobol.png",
+      "alt": "foto logo de cobol",
+      "title": "programacion cobol",
+      "descripcion": {
+        "titulo": "cobol",
+        "texto": "utilización del lenguaje, no lo utilizo mucho pero me siento cómodo utilizándolo y aprendo día a día",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "jquery",
+      "nombre": "jQuery",
+      "imagen": "foto/jquery.png",
+      "alt": "foto logo de jquery",
+      "title": "framework",
+      "descripcion": {
+        "titulo": "jquery",
+        "texto": "Tecnología que utilizo habitualmente en ejercicios típicos de programación me gusta utilizar este tipo de tecnología por su sintaxis",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "angular",
+      "nombre": "Angular",
+      "imagen": "foto/angular.png",
+      "alt": "foto logo de angular",
+      "title": "framework",
+      "descripcion": {
+        "titulo": "Angular",
+        "texto": "No lo utilizo demasiado lo estoy aprendiendo es algo a mejorar. pues una tecnología muy utilizada en el ecosistema de programación.",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "react",
+      "nombre": "React",
+      "imagen": "foto/react.png",
+      "alt": "foto logo de react",
+      "title": "framework",
+      "descripcion": {
+        "titulo": "react",
+        "texto": "lo utilizo pero no mucho",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "bootstrap",
+      "nombre": "Bootstrap",
+      "imagen": "foto/bootsprap.png",
+      "alt": "foto logo de bootstrap",
+      "title": "framework",
+      "descripcion": {
+        "titulo": "bootstrap",
+        "texto": "tecnología que utilizo bastante. pues es una herramienta bastante útil en diseño",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "wordpress",
+      "nombre": "WordPress",
+      "imagen": "foto/workpress.png",
+      "alt": "foto logo de wordpress",
+      "title": "wordpress cms",
+      "descripcion": {
+        "titulo": "wordpress",
+        "texto": "utilizo para hacer tiendas online rápidamente depende de que quiere el cliente.",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "sql",
+      "nombre": "SQL",
+      "imagen": "foto/sql.png",
+      "alt": "foto logo de sql",
+      "title": "base de datos",
+      "descripcion": {
+        "titulo": "SQL",
+        "texto": "utilizo esta base de datos para los que son sitios web, es el que me queda más cómodo.",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    },
+    {
+      "id": "bd2",
+      "nombre": "BD2",
+      "imagen": "foto/bd2.png",
+      "alt": "foto logo de bd2",
+      "title": "base de datos",
+      "descripcion": {
+        "titulo": "BD2",
+        "texto": "utilizada solamente para utilización de lenguaje cobol.",
+        "progreso": 0,
+        "mostrarProgreso": false
+      }
+    }
+  ],
+  "descripcionGeneral": {
+    "titulo": "Tecnologías",
+    "texto": "este es el stack de tecnologías en que tengo manejo y entiendo, en algunas tecnologías tengo mejor manejo que otras pero tengo una buena curva de aprendizaje en programación."
+  }
+} 

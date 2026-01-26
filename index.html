@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- head encabezado de la pagina todo lo que no esta estructurado
+  -->
+    <meta charset="utf-8" />
+    <title>mariano zalazar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <!-- Fuente Monospace nativa del sistema -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- encabezado de pagina menu y nombre
+  -->
+      <h1 id="h1">Mariano Emanuel ZALAZAR</h1>
+      <nav>
+        <ul id="lista" class="menu" style="display: none">
+          <li><a href="#primera">Presentación</a></li>
+          <!--
+          segunda parte de la secciones se va por diseño  -->
+          <li><a href="#proyecto">proyecto</a></li>
+          <li><a href="#tercera">Programación</a></li>
+
+          <li><a href="#critica">Mensaje</a></li>
+
+          <li>
+            <a download="descargar" href="CopiacvMarianozalazar.pdf">Mi CV</a>
+          </li>
+        </ul>
+        <button id="botonMenu" onclick="toggleMenu()">☰ Menú</button>
+        <button id="botonCerrar" onclick="toggleMenu()" style="display: none">
+          ✖ Cerrar
+        </button>
+      </nav>
+    </header>
+    <section id="primera">
+      <!--
+
+      primera parte de la secciones
+  -->
+      <div class="container text-center" id="caja1">
+        <div class="row align-items-center" id="presentar">
+          <div class="col-4" id="col1">
+            <img id="img" src="foto/avatar.png" alt="foto de perfil" />
+          </div>
+          <div class="col-8" id="col2">
+            <h2>Hola, soy Mariano Emanuel ZALAZAR</h2>
+            <p>
+              Soy un apasionado programador web y desarrollador, cadista y
+              constructor mecatrónico de 32 años, originario de Buenos Aires,
+              Argentina. Actualmente, estoy cursando Ingeniería Mecatrónica en
+              la Universidad Nacional de Lomas de Zamora y también soy docente
+              técnico.
+              <br />
+              Me complace presentarte mi primera página web, que funciona como
+              mi portafolio digital. Aquí comparto un pequeño vistazo a mi
+              trabajo en el mundo digital. Mi objetivo es proporcionarte una
+              experiencia de usuario excelente. Si encuentras algo que podría
+              mejorarse, ¡me encantaría recibir tus comentarios para seguir
+              creciendo y convertirme en un profesional web aún mejor para el
+              futuro! ¡Espero que disfrutes explorando mi trabajo! ¡Saludos
+              cordiales!
+            </p>
+            <!--
+	-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="container my-5">
+      <h2 class="text-center text-primary">Mis Proyectos</h2>
+      <div
+        id="carouselProyectos"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="foto/paginadecurso.jpg"
+              class="d-block w-100"
+              alt="Proyecto 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>recursos humanos</h5>
+              <p>pagina de recursos humanos</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="foto/paginarecurso.jpg"
+              class="d-block w-100"
+              alt="Proyecto 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>elearne</h5>
+              <p>pagina de venta de cursos por internet</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="foto/benito.jpg" class="d-block w-100" alt="Proyecto 3" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>benito stl</h5>
+              <p>aplicacion de escritorio en python orientada en stl.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselProyectos"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselProyectos"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección restaurada: tercera -->
+
+    <!--
+
+      segunda parte de la secciones
+ conlas tablas de programacion se va cambio de diseño  -->
+    <section id="tercera">
+      <div id="programas" style="background-color: #0a192f">
+        <h5 class="algo2">stack</h5>
+        <div id="conjunto">
+          <div id="logotipo">
+            <!-- Los logos se cargarán dinámicamente desde JSON -->
+          </div>
+          <div id="texto">
+            <div id="cuadrodein">
+              <!-- Las descripciones se cargarán dinámicamente desde JSON -->
+            </div>
+            <div id="cuadrito2">
+              <!-- La descripción general se cargará dinámicamente desde JSON -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Proyectos con Carrusel de Bootstrap -->
+
+    <section id="critica">
+      <div id="c">
+        <button id="c1" onclick="hacer();">hacer un comentario</button>
+      </div>
+      <div class="modal" id="modal">
+        <span class="close">&times;</span>
+
+        <form
+          onclick="iniciar();"
+          action="https://formsubmit.co/zalazar.unlz@gmail.com"
+          method="post"
+          id="comentario"
+          name="formu"
+        >
+          <h5>comentarios, las criticas constructivas son bien resibidas</h5>
+          <input
+            type="texta"
+            id="nombre"
+            name="name"
+            placeholder="nombre y apellido"
+          />
+          <input type="email" id="email" name="email" placeholder="email" />
+
+          <input type="texta" id="asunto" name="subject" placeholder="asunto" />
+
+          <textarea
+            id="texta"
+            placeholder="comentario"
+            name="comments"
+          ></textarea>
+
+          <input type="submit" id="subir" value="enviar" />
+          <input type="hidden" name="_next" />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
+    </section>
+    <section id="quinta">
+      <footer>
+        <h5>contactos</h5>
+        <ul id="contacto">
+          <li>Bs.As Argentina</li>
+          <li>
+            <a target="_blank" href="https://github.com/maritolafe/codopage"
+              >github</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/marianomecatronica/?locale=es_ES"
+              >LINKEDIN</a
+            >
+          </li>
+          <li>zalazar.unlz@gmail.com</li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+
+  <script type="text/javascript" src="js/cajas.js" defer></script>
+  <!-- <script type="text/javascript" src="js/cuadro.js"></script> -->
+
+  <script type="text/javascript" src="js/reenvio.js" defer></script>
+
+  <!--<script type="text/javascript" src="js/linea.js" defer></script>
+
+  <script type="text/javascript" src="js/curso.js" defer></script>
+  -->
+  <script type="text/javascript" src="js/titulo.js" defer></script>
+  <script type="text/javascript" src="js/menu.js" defer></script>
+
+  <script type="text/javascript" src="js/ocultar-parrafo.js" defer></script>
+  <script
+    type="text/javascript"
+    src="js/validacion-formulario.js"
+    defer
+  ></script>
+  <script type="text/javascript" src="js/carousel1.js" defer></script>
+  <script
+    type="text/javascript"
+    src="js/cargar-datos-academicos.js"
+    defer
+  ></script>
+  <script type="text/javascript" src="js/cargar-logos.js" defer></script>
+  <script type="text/javascript" src="js/carousel-logotipo.js" defer></script>
+  <script
+    type="text/javascript"
+    src="js/carousel-logotipo-vertical.js"
+    defer
+  ></script>
+  <!--<script type="text/javascript" src="js/menubinario.js" defer></script>-->
+  <script
+    type="text/javascript"
+    src="js/header-scroll-effect.js"
+    defer
+  ></script>
+  <!--<script type="text/javascript" src="js/menu-matrix.js" defer></script>-->
+  <script type="text/javascript" src="js/dianoche.js" defer></script>
+  <!--<script type="text/javascript" src="js/secciones.js"></script>-->
+</html>
