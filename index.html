@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <!-- head encabezado de la pagina todo lo que no esta estructurado
@@ -37,7 +37,7 @@
           <li><a href="#critica">Mensaje</a></li>
 
           <li>
-            <a download="descargar" href="CopiacvMarianozalazar.pdf">Mi CV</a>
+            <a download="descargar" href="cvmarianozalazar.pdf">Mi CV</a>
           </li>
         </ul>
         <button id="botonMenu" onclick="toggleMenu()">☰ Menú</button>
@@ -60,7 +60,7 @@
             <h2>Hola, soy Mariano Emanuel ZALAZAR</h2>
             <p>
               Soy un apasionado programador web y desarrollador, cadista y
-              constructor mecatrónico de 33 años, originario de Buenos Aires,
+              constructor mecatrónico de 32 años, originario de Buenos Aires,
               Argentina. Actualmente, estoy cursando Ingeniería Mecatrónica en
               la Universidad Nacional de Lomas de Zamora y también soy docente
               técnico.
@@ -168,28 +168,28 @@
 
     <section id="critica">
       <div id="c">
-        <button id="c1" onclick="hacer();">hacer un comentario</button>
+        <button id="c1" onclick="hacer()">hacer un comentario</button>
       </div>
       <div class="modal" id="modal">
         <span class="close">&times;</span>
 
         <form
-          onclick="iniciar();"
-          action="https://formsubmit.co/zalazar.unlz@gmail.com"
+          onclick="iniciar()"
+          action="#"
           method="post"
           id="comentario"
           name="formu"
         >
           <h5>comentarios, las criticas constructivas son bien resibidas</h5>
           <input
-            type="texta"
+            type="text"
             id="nombre"
             name="name"
             placeholder="nombre y apellido"
           />
           <input type="email" id="email" name="email" placeholder="email" />
 
-          <input type="texta" id="asunto" name="subject" placeholder="asunto" />
+          <input type="text" id="asunto" name="subject" placeholder="asunto" />
 
           <textarea
             id="texta"
@@ -198,7 +198,7 @@
           ></textarea>
 
           <input type="submit" id="subir" value="enviar" />
-          <input type="hidden" name="_next" />
+          <!-- _next eliminado porque se maneja por JS -->
           <input type="hidden" name="_captcha" value="false" />
         </form>
       </div>

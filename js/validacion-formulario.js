@@ -1,5 +1,28 @@
 // Validación del formulario con eventos
 document.addEventListener('DOMContentLoaded', function() {
+        // Mostrar mensaje de éxito si la URL contiene ?enviado=1
+        if (window.location.search.includes('enviado=1')) {
+            setTimeout(function() {
+                const exitoDiv = document.createElement('div');
+                exitoDiv.className = 'exito-mensaje';
+                exitoDiv.style.color = '#00ff00';
+                exitoDiv.style.fontSize = '16px';
+                exitoDiv.style.margin = '20px auto';
+                exitoDiv.style.textAlign = 'center';
+                exitoDiv.style.fontWeight = 'bold';
+                exitoDiv.textContent = '¡Enviado con éxito!';
+                document.body.insertBefore(exitoDiv, document.body.firstChild);
+                setTimeout(function() {
+                    if (exitoDiv.parentNode) {
+                        exitoDiv.remove();
+                    }
+                    // Limpiar el parámetro de la URL sin recargar
+                    if (window.history.replaceState) {
+                        window.history.replaceState({}, document.title, window.location.pathname);
+                    }
+                }, 4000);
+            }, 300);
+        }
     const form = document.getElementById('comentario');
     const nombre = document.getElementById('nombre');
     const email = document.getElementById('email');
@@ -130,31 +153,44 @@ document.addEventListener('DOMContentLoaded', function() {
     // Validación al enviar el formulario
     form.addEventListener('submit', function(e) {
         e.preventDefault();
-
         const nombreValido = validarNombre();
         const emailValido = validarEmail();
         const asuntoValido = validarAsunto();
         const comentarioValido = validarComentario();
 
-        // Si algún campo no es válido, enfoca el primero incorrecto
+        // Si algún campo no es válido, enfoca el primero incorrecto y previene el envío
         if (!nombreValido) {
             nombre.focus();
+            return;
         } else if (!emailValido) {
             email.focus();
+            return;
         } else if (!asuntoValido) {
             asunto.focus();
+            return;
         } else if (!comentarioValido) {
             texta.focus();
+            return;
         }
 
-        if (nombreValido && emailValido && asuntoValido && comentarioValido) {
-            // Si todo es válido, mostrar mensaje de éxito
-            mostrarExito();
-            // Limpiar formulario
-            form.reset();
-            // Restaurar colores
-            [nombre, email, asunto, texta].forEach(removerError);
-        }
+        // Enviar el formulario por AJAX a formsubmit.co
+        const formData = new FormData(form);
+        fetch('https://formsubmit.co/zalazar.unlz@gmail.com', {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => {
+            if (response.ok) {
+                mostrarExito();
+                form.reset();
+                [nombre, email, asunto, texta].forEach(removerError);
+            } else {
+                alert('Error al enviar el formulario. Intente nuevamente.');
+            }
+        })
+        .catch(() => {
+            alert('Error al enviar el formulario. Intente nuevamente.');
+        });
     });
 
     // Forzar color de fondo y texto al copiar/pegar en los campos
