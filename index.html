@@ -177,12 +177,12 @@
           action="https://formsubmit.co/zalazar.unlz@gmail.com"
           method="POST"
           id="comentario"
-          name="formu"
           class="needs-validation"
-          onsubmit="return validarYEnviarFormulario(event);"
           novalidate
         >
-          <h5 class="mb-3">Comentarios, las críticas constructivas son bien recibidas</h5>
+          <h5 class="mb-3">
+            Comentarios, las críticas constructivas son bien recibidas
+          </h5>
           <div class="mb-3">
             <input
               type="text"
@@ -227,8 +227,15 @@
             ></textarea>
           </div>
           <input type="hidden" name="_captcha" value="false" />
-          <button type="submit" id="subir" class="btn btn-primary">Enviar</button>
-          <div id="mensaje-exito" class="mt-3" style="display:none;"></div>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://maritolafe.github.io/marianozpage/"
+          />
+          <button type="submit" id="subir" class="btn btn-primary">
+            Enviar
+          </button>
+          <div id="mensaje-exito" class="mt-3" style="display: none"></div>
         </form>
         <script src="js/validacion-formulario-nuevo.js"></script>
       </div>
@@ -274,17 +281,9 @@
   <script type="text/javascript" src="js/menu.js" defer></script>
 
   <script type="text/javascript" src="js/ocultar-parrafo.js" defer></script>
-  <script
-    type="text/javascript"
-    src="js/validacion-formulario.js"
-    defer
-  ></script>
+
   <script type="text/javascript" src="js/carousel1.js" defer></script>
-  <script
-    type="text/javascript"
-    src="js/cargar-datos-academicos.js"
-    defer
-  ></script>
+
   <script type="text/javascript" src="js/cargar-logos.js" defer></script>
   <script type="text/javascript" src="js/carousel-logotipo.js" defer></script>
   <script
