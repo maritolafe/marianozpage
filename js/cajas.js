@@ -1,32 +1,27 @@
-function mostrar(){
-var lista =document.getElementById('lista');
-if(lista.style.display =='none'){
-lista.style.display ='block'
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("c1"); // botón "hacer un comentario"
+  const modal = document.getElementById("modal"); // tu modal
+  if (!btn || !modal) return;
 
+  const closeBtn = modal.querySelector(".close");
 
-}else{
-lista.style.display ='none'
-}
-}
-// parte de caja criticas...
-// Obtener elementos del DOM
-var modal = document.getElementById("modal");
-var cBoton = document.getElementById("c1");
-var cerraButton = document.getElementsByClassName("close")[0];
+  // Abrir
+  btn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
 
-// Abrir la ventana modal al hacer clic en el botón
-cBoton.addEventListener("click", function() {
-  modal.style.display = "block";
-});
-
-// Cerrar la ventana modal al hacer clic en el botón de cierre
-cerraButton.addEventListener("click", function() {
-  modal.style.display = "none";
-});
-
-// Cerrar la ventana modal al hacer clic fuera de ella
-window.addEventListener("click", function(event) {
-  if (event.target == modal) {
+  // Cerrar con X
+  closeBtn?.addEventListener("click", () => {
     modal.style.display = "none";
-  }
+  });
+
+  // Cerrar clickeando fuera
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
+  });
+
+  // Cerrar con ESC
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") modal.style.display = "none";
+  });
 });
