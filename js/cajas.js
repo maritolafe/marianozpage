@@ -25,3 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") modal.style.display = "none";
   });
 });
+function iniciar() {
+  console.log("Función iniciar ejecutada");
+}
+function hacer() {
+  console.log("Función iniciar ejecutada");
+}
