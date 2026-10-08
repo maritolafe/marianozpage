@@ -1,3 +1,0 @@
-// ...código de historial.js...
-window.history.replaceState &&
-  window.history.replaceState(null, null, window.location.href);
